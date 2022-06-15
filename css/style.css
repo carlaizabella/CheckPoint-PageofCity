@@ -1,0 +1,303 @@
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background: rgb(1, 52, 20);
+  background: linear-gradient(
+    236deg,
+    rgba(1, 52, 20, 0.9326604421065301) 0%,
+    rgba(9, 217, 170, 0.952268285243785) 47%,
+    rgba(0, 212, 255, 0.983080610173757) 94%
+  );
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 213px;
+  background-color: hsl(208, 92%, 19%);
+  /* justify-content: space-around; */
+}
+
+main {
+  display: block;
+}
+
+.container--logo {
+  display: block;
+  height: 140px;
+  width: 340px;
+  left: 122px;
+  top: 36px;
+  border-radius: 36px;
+}
+
+.container--logo img {
+  height: 140px;
+  width: 340px;
+  left: 122px;
+  top: 36px;
+  border-radius: 36px;
+}
+
+.container--navegacao {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 82px;
+  width: 197px;
+  gap: 150%;
+  /* left: 555px; */
+  /* top: 65px; */
+  border-radius: 36px;
+
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.7645932152157738) 0%,
+    rgba(254, 249, 54, 1) 0%,
+    rgba(18, 73, 21, 0.983080610173757) 87%
+  );
+}
+
+.navegacao a {
+  /* flex-direction: center; */
+  /* justify-content: center; */
+  text-decoration: none;
+  text-align: center;
+}
+
+.container--banner {
+  display: flex;
+
+  width: 100%;
+  height: 360px;
+  /* position: center; */
+  background-image: url(/img/background-riocuiabá.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  /* background-position-x: center; */
+  
+  /* border-radius: 0px; */
+}
+
+
+
+main h4 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.container--curiosidade {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container--curiosidadeImg {
+  height: 534px;
+  width: 335px;
+  left: 123px;
+  top: 922px;
+  border-radius: 31px;
+}
+
+.container--curiosidadeImg img {
+  height: 534px;
+  width: 335px;
+  border-radius: 31px;
+}
+
+.container--curiosidadeImg h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.container--curiosidadeImg a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.container--video {
+  display: flex;
+  /* padding: 15%; */
+
+  left: 123px;
+  top: 1675px;
+  border-radius: 31px;
+}
+
+section h4 {
+  margin-top: 13%;
+}
+
+.container--video iframe {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: ; */
+  margin-top: 3%;
+
+  /* height: 414px;
+  width: 100%; */
+  /* left: 0px;
+  top: 2442px; */
+  border-radius: 0px;
+}
+
+.container-icons {
+  display: flex;
+  position: center;
+  justify-content: center;
+  align-items: stretch;
+  height: 245px;
+  width: 100%;
+
+  border-radius: 0;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15%;
+  justify-content: center;
+  height: 240px;
+  width: 227px;
+}
+
+.icon a {
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.icon img {
+  border-radius: 50%;
+
+  height: 141px;
+  width: 141px;
+}
+
+@media (max-width: 421px) {
+  body {
+    width: 100%;
+
+    /* background: rgb(1,52,20); */
+    background: linear-gradient(
+      236deg,
+      rgba(1, 52, 20, 0.9326604421065301) 0%,
+      rgba(9, 217, 170, 0.952268285243785) 47%,
+      rgba(0, 212, 255, 0.983080610173757) 94%
+    );
+    background-repeat: no-repeat;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 50%;
+  }
+
+  main {
+    align-items: center;
+    padding-top: 10%;
+  }
+
+  .container--navegacao {
+    display: flex;
+    flex-direction: column;
+
+    /* flex-wrap: column; */
+    gap: 20px;
+  }
+
+  .navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* flex-wrap: column; */
+  }
+
+  .navegacao a {
+    text-align: center;
+    text-decoration: none;
+  }
+  .container--banner {
+    display: none;
+  }
+
+  .container--curiosidade {
+    flex-direction: column;
+    flex-wrap: column;
+    gap: 5%;
+  }
+
+  .container--curiosidadeImg {
+    flex-direction: column;
+    flex-wrap: column;
+    /* padding: 15%; */
+
+    gap: 35%;
+  }
+
+  .container--curiosidadeImg a {
+    text-align: center;
+  }
+
+  article {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    padding: 15%;
+  }
+
+  .container-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35%;
+    gap: 80%;
+  }
+
+  h4 {
+    padding-left: 7%;
+  }
+}
